@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Text"
+        android:layout_below="@+id/Image"
+        android:layout_marginTop="21dp" >
+
+        
+
+        <RadioButton
+            android:id="@+id/Weibo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Text"
+            android:layout_below="@+id/Text"
+            android:layout_marginTop="14dp"
+            android:text="Sina" 
+            android:checked="true"
+            />
+
+        <RadioButton
+            android:id="@+id/Tencent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Tencent"
+            android:layout_below="@+id/Tencent"
+            android:text="Tenecnt" />
+        <RadioButton
+            android:id="@+id/RenRen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RenRen" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/Image"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Text"
+        android:layout_alignBottom="@+id/Text"
+        android:layout_alignRight="@+id/editText"
+        android:text="Image" 
+        android:clickable="false"/>
+
+    <Button
+        android:id="@+id/Text"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_below="@+id/editText"
+        android:layout_marginTop="27dp"
+        android:text="Text" />
+
+</RelativeLayout>
